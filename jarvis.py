@@ -1,5 +1,5 @@
-#before using this u must ensure that u have a mic of good quality.
-#u can modify code according to u , but this the way i made it.
+# Before using this u must ensure that u have a mic of good quality.
+# You can modify code according to u , but this is the way i made it.
 import speech_recognition as sr
 import pyttsx3
 import datetime
