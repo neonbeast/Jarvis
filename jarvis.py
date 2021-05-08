@@ -1,3 +1,5 @@
+#before using this u must ensure that u have a mic of good quality.
+#u can modify code according to u , but this the way i made it.
 import speech_recognition as sr
 import pyttsx3
 import datetime
@@ -104,7 +106,7 @@ if __name__=='__main__':
             time.sleep(5)
 
         elif "weather" in statement:
-            api_key="31f76ac473c6e11d7219c8798f4b2970"
+            api_key="31f7xxxxxxxxxxxxxxxxx" #get your api id from the site "https://api.openweathermap.org/"
             base_url="https://api.openweathermap.org/data/2.5/weather?"
             speak("whats the city name")
             city_name=takeCommand()
@@ -146,8 +148,8 @@ if __name__=='__main__':
 
 
         elif "who made you" in statement or "who created you" in statement or "who discovered you" in statement:
-            speak("I was built by Deepak")
-            print("I was built by Deepak")
+            speak("I was built by Deku!!")
+            print("I was built by Deku!!")
 
         elif "open stackoverflow" in statement:
             webbrowser.open_new_tab("https://stackoverflow.com/login")
@@ -169,8 +171,8 @@ if __name__=='__main__':
         elif 'ask' in statement:
             speak('I can answer to computational and geographical questions and what question do you want to ask now')
             question=takeCommand()
-            app_id="JG3KTR-T5R5YGJT86"
-            client = wolframalpha.Client('JG3KTR-T5R5YGJT86')
+            app_id="JGxxxxxxxxxxx" #get api id from site of wolframalpha -(https://www.wolframalpha.com/)
+            client = wolframalpha.Client('JGxxxxxxxxxxxx')
             res = client.query(question)
             answer = next(res.results).text
             speak(answer)
@@ -214,17 +216,6 @@ if __name__=='__main__':
         elif 'joke' in statement:
             speak(pyjokes.get_joke())
             
-        elif 'physics'in statement:
-            pp="F:\\Vedantu XII\\Physics"
-            os.startfile(pp)
-        
-        elif 'chemistry'in statement:
-            cp="F:\\Vedantu XII\\Chemistry"
-            os.startfile(cp)
-        
-        elif 'mathematics'in statement:
-            mp="F:\\Vedantu XII\\Mathematics"
-            os.startfile(mp)
         
         elif 'open amazon' in statement:
             speak('Amazon.com - open now !')
@@ -232,24 +223,13 @@ if __name__=='__main__':
 
         elif 'open instagram' in statement:
             speak('Instagram - open now !')
-            webbrowser.open_new_tab('https://www.instagram.com/')    
-        
-        elif 'open orientation sheet' in statement:
-            speak('orientation sheet - open now !')
-            webbrowser.open_new_tab('https://docs.google.com/spreadsheets/d/18aKXkHNgmqiGNClpU9vPEVes8X1fJRo4jq4UPxQV5wQ/edit#gid=0')
-
-        elif 'personal analysis' in statement:
-            speak('Persoanl analysis - open now !')
-            webbrowser.open_new_tab('https://docs.google.com/spreadsheets/d/1beX4S0lMxNL4IE_njajaIPYhswfEouc3CXIsqaCML9E/edit#gid=0')
-        
-        elif 'homework' in statement:
-            speak('Homework - open now !')
-            webbrowser.open_new_tab('https://docs.google.com/spreadsheets/d/1BFvRg1T0uu7x8ZCApU3fzLJEXjQRHmvQ8I6FI945-uM/edit#gid=0')
+            webbrowser.open_new_tab('https://www.instagram.com/')  
         
         elif 'quiet' in statement or 'shant ho ja' in statement:
             speak('Okay master , shutting my mouth......hehehehehe!! ')
             input('Press Enter to unmute.......')
-        
+      #the below program is to just use jarvis as an audiobook if u r too lazy to read................xd 
+      #use pdf whatever u want , just replace it in the code and also the pdf should be where u created jarvis.py. 
         elif 'ebook reader' in statement:
             speak('Switching to ebook reader mode!')
             book = open('c1.pdf', 'rb')
